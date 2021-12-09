@@ -6,10 +6,10 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 @Component({
   selector: 'app-root',
-  templateUrl: 'app.component.html',
+  templateUrl: 'app.component.html',//表示するhtmlの指定
   styleUrls: ['app.component.scss']
 })
-export class AppComponent {
+export class AppComponent {//これをapp.modele.tsで呼び出している
   public appPages = [
     {
       title: 'Home',

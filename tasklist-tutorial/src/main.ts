@@ -8,5 +8,6 @@ if (environment.production) {
   enableProdMode();
 }
 
+///アプリ実行時の呼び出しファイル
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err));
