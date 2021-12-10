@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title>タスク一覧</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <!--page.tsから取得してループで表示していく-->
+    <!--アイテムをクリックすると、changeTask())が動く＝アクションシートが出る-->
+    <ion-item *ngFor="let t of tasks; let i = index" [button]="true" (click)="changeTask(i)">
+      <ion-label>{{t.name}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>
