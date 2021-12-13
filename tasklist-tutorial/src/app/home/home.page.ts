@@ -20,10 +20,11 @@ export class HomePage {
     { name: 'タスク１'},
     { name: 'タスク２',}
   ];
+
   constructor() {}
 
 
-  //ページ読み込み時の処理
+  //ページ読み込み開始時の処理
   ionViewWillEnter(){
 
     //ローカルストレージに[tasks]]が有ればJSONから複合しながら読み込む
@@ -32,6 +33,13 @@ export class HomePage {
     }
 
   }
+  
+
+
+
+
+
+
 
 
 //タスクを追加する処理
