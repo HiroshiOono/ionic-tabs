@@ -13,11 +13,8 @@ export class Tab1Page {
   
   localNotification() {
 
-    Plugins.LocalNotifications.requestPermisson();
-
     Plugins.LocalNotifications.schedule({
 
-      
       notifications: [
         {
           id: 1,

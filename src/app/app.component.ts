@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { Plugins } from '@capacitor/core'
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,9 @@ export class AppComponent {
     private statusBar: StatusBar
   ) {
     this.initializeApp();
+    Plugins.Admob.initialize(
+      platform.is('ios')?'ca-app-pub-8237891427262357~3359029651' : 'ca-app-pub-8237891427262357~9980278321'
+    );
   }
 
   initializeApp() {
